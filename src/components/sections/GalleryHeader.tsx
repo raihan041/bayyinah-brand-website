@@ -20,11 +20,17 @@ export default function GalleryHeader() {
             {t("Official Media Archive", "অফিসিয়াল চিত্রশালা ও ভিডিও")}
           </div>
 
-          <h1 className={`text-2xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl font-extrabold tracking-tight text-white leading-[1.2] ${language === "bn" ? "font-bengali text-3xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl" : ""}`}>
-            {t("Campus Photography & Video Showcases.", "শিক্ষা, সংস্কৃতি ও আনন্দের প্রামাণ্য চিত্রশালা।")}
-          </h1>
+          {language === "bn" ? (
+            <h1 className="hero-title-bn font-extrabold tracking-tight text-white font-bengali">
+              {t("Campus Photography & Video Showcases.", "শিক্ষা, সংস্কৃতি ও আনন্দের প্রামাণ্য চিত্রশালা।")}
+            </h1>
+          ) : (
+            <h1 className="hero-title-en font-extrabold tracking-tight text-white">
+              {t("Campus Photography & Video Showcases.", "শিক্ষা, সংস্কৃতি ও আনন্দের প্রামাণ্য চিত্রশালা।")}
+            </h1>
+          )}
 
-          <p className={`text-sm sm:text-base text-white/80 mt-4 leading-relaxed ${language === "bn" ? "font-bengali text-base sm:text-lg" : ""}`}>
+          <p className={`hero-desc mt-3.5 sm:mt-4 text-sm sm:text-[15px] lg:text-[15.5px] text-white/80 leading-relaxed max-w-2xl ${language === "bn" ? "font-bengali text-sm sm:text-[15.5px]" : ""}`}>
             {t(
               "Explore high-resolution documentary photography and featured student presentations from Bayyinah Ideal School. Every image and recording reflects real classroom practice, academic achievements, and community events.",
               "বাইয়্যিনাহ আইডিয়াল স্কুলের প্রাত্যহিক পাঠদান, বিজ্ঞান ল্যাব, বার্ষিক উৎসব ও শিক্ষার্থীদের ইংরেজি বক্তব্যের প্রামাণ্য আলোকচিত্র ও ভিডিও চিত্রমালা।"

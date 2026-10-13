@@ -32,20 +32,25 @@ export default function ContactView() {
               {t("Campus & Admissions Desk", "ক্যাম্পাস ও ভর্তি তথ্য")}
             </div>
 
-            <h1
-              className={`text-2xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl font-extrabold tracking-tight text-white leading-[1.2] ${
-                language === "bn" ? "font-bengali text-3xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl" : ""
-              }`}
-            >
-              {t(
-                "Connect With Bayyinah Ideal School.",
-                "সরাসরি যোগাযোগ ও ভর্তি তথ্যের জন্য আমাদের স্বাগতম।"
-              )}
-            </h1>
+            {language === "bn" ? (
+              <h1 className="hero-title-bn font-extrabold tracking-tight text-white font-bengali">
+                {t(
+                  "Connect With Bayyinah Ideal School.",
+                  "সরাসরি যোগাযোগ ও ভর্তি তথ্যের জন্য আমাদের স্বাগতম।"
+                )}
+              </h1>
+            ) : (
+              <h1 className="hero-title-en font-extrabold tracking-tight text-white">
+                {t(
+                  "Connect With Bayyinah Ideal School.",
+                  "সরাসরি যোগাযোগ ও ভর্তি তথ্যের জন্য আমাদের স্বাগতম।"
+                )}
+              </h1>
+            )}
 
             <p
-              className={`text-sm sm:text-base text-white/80 mt-4 leading-relaxed ${
-                language === "bn" ? "font-bengali text-base sm:text-lg" : ""
+              className={`hero-desc mt-3.5 sm:mt-4 text-sm sm:text-[15px] lg:text-[15.5px] text-white/80 leading-relaxed max-w-2xl ${
+                language === "bn" ? "font-bengali text-sm sm:text-[15.5px]" : ""
               }`}
             >
               {t(

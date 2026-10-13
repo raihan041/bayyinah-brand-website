@@ -39,11 +39,17 @@ export default function CurriculumView() {
               {t("Integrated Academic Framework", "সমন্বিত শিক্ষাক্রম রূপরেখা")}
             </div>
 
-            <h1 className={`text-2xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl font-extrabold tracking-tight text-white leading-[1.2] ${language === "bn" ? "font-bengali text-3xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl" : ""}`}>
-              {t("Academic Rigour Anchored in Divine Guidance.", "জাতীয় শিক্ষাক্রম ও বিশুদ্ধ দীনিয়্যাতের বাস্তবায়ন।")}
-            </h1>
+            {language === "bn" ? (
+              <h1 className="hero-title-bn font-extrabold tracking-tight text-white font-bengali">
+                {t("Academic Rigour Anchored in Divine Guidance.", "জাতীয় শিক্ষাক্রম ও বিশুদ্ধ দীনিয়্যাতের বাস্তবায়ন।")}
+              </h1>
+            ) : (
+              <h1 className="hero-title-en font-extrabold tracking-tight text-white">
+                {t("Academic Rigour Anchored in Divine Guidance.", "জাতীয় শিক্ষাক্রম ও বিশুদ্ধ দীনিয়্যাতের বাস্তবায়ন।")}
+              </h1>
+            )}
 
-            <p className={`text-sm sm:text-base text-white/80 mt-4 leading-relaxed ${language === "bn" ? "font-bengali text-base sm:text-lg" : ""}`}>
+            <p className={`hero-desc mt-3.5 sm:mt-4 text-sm sm:text-[15px] lg:text-[15.5px] text-white/80 leading-relaxed max-w-2xl ${language === "bn" ? "font-bengali text-sm sm:text-[15.5px]" : ""}`}>
               {t(
                 "Bayyinah Ideal School delivers the Bangladesh National Curriculum & Textbook Board (NCTB) syllabi in both English Version and Bangla Version. We ensure full alignment with national board examinations while pioneering proprietary pedagogical workbooks and Quranic Tajweed.",
                 "বাইয়্যিনাহ আইডিয়াল স্কুলে বাংলাদেশ জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (এনসিটিবি) অনুমোদিত সিলেবাসে ইংলিশ ভার্সন ও বাংলা ভার্সনে প্লে থেকে দশম শ্রেণি পর্যন্ত আন্তরিক ও মানসম্মত পাঠদান পরিচালিত হয়।"
