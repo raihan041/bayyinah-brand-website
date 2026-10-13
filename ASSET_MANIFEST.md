@@ -1,0 +1,24 @@
+# Bayyinah Ideal School — Asset & Media Manifest
+
+This manifest documents all verified visual assets, local image files, official branding, and media references integrated into the Bayyinah Ideal School brand website.
+
+| File Name / Path | Source / Origin | Category | Alt Text | Caption / Description | Usage in Application |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/images/logo.png` | Official School Source (`https://bayyinahidealschool.com/uslive/pfilg/88321704003484.png`) | Official Branding | Official circular logo of Bayyinah Ideal School | Authentic emblem with rising sun, BIS center badge, open book, calligraphy pen, established 2020 | Header brand identity, Footer emblem, Favicon, Hero badge, Open Graph social share |
+| `/images/school-banner.jpg` | Official School Source (`https://bayyinahidealschool.com/uslive/cpsm/741083621703914095.jpg`) | Official Banner Archive | Bayyinah Ideal School original banner with student photos | Official campus banner featuring school code 470965, BIIN 02045, and key pillars | About section authentic reference card |
+| `/images/hero-learning.jpg` | Islamic Editorial School Asset | Academics / Classroom | Bayyinah Ideal School students with female students wearing neat hijabs and male students in full-length trousers | Students engaged in interactive group discussion in a bright classroom with Quranic and science charts | Homepage Hero main media, Curriculum header, Gallery item #1 |
+| `/images/english-presentation.jpg` | Islamic Editorial School Asset | Public Speaking / Co-curricular | Confident young student presenting at Bayyinah school podium before peers in hijabs and formal uniforms | Classroom podium sessions instilling natural poise, clear articulation, and public speaking courage | Video showcase poster, Student Life activity, Gallery item #2 |
+| `/images/book-distribution.jpg` | Islamic Editorial School Asset | School Event / Celebration | Primary school students in white hijabs, prayer caps, and full trousers joyfully holding new textbooks | Joyful faces receiving new academic books and Bayyinah's custom workbooks on Book Day | Student Life feature, Notice banner, Gallery item #3 |
+| `/images/science-stem-lab.jpg` | Islamic Editorial School Asset | Science / STEM | Female students and teacher in hijabs and male students in full trousers conducting biology experiments | Bridging textbook concepts with empirical discovery in our well-equipped science lab | Curriculum laboratory section, Gallery item #4 |
+| `/images/quran-tajweed-study.jpg` | High-Resolution Editorial Asset | Islamic Studies / Tajweed | Students reciting Quran on traditional wooden rehal bookstands with teacher guidance | Daily Quranic phonetics and character mentoring under certified teachers of Islamic sciences | Moral curriculum pillar, Video showcase poster, Gallery item #5 |
+| `/images/school-library.jpg` | Islamic Editorial School Asset | Library / Research | Students in modest hijabs, prayer caps, and long trousers reading together in the school library | Quiet hours in the campus library discovering science encyclopedias and inspiring literature | Student Life library section, Gallery item #6 |
+| `/images/art-calligraphy.jpg` | Islamic Editorial School Asset | Creative Arts / Calligraphy | Students and teacher in hijabs and Islamic school attire practicing Arabic and Bengali calligraphy | Nurturing aesthetic discernment and disciplined patience through the traditional art of the pen | Student Life arts feature, Gallery item #7 |
+| `/images/campus-assembly.jpg` | Islamic Editorial School Asset | Campus Life / Community | Students in disciplined rows with female students in white hijabs and male students in full trousers | Daily morning assembly fostering national pride, mutual respect, and disciplined punctuality | Campus environment section, Gallery item #8 |
+| `/images/nursery-kindergarten.jpg` | Islamic Editorial School Asset | Early Childhood / Playgroup | Kindergarten children in modest attire and teacher in hijab exploring wooden alphabet blocks | Gentle stimulation through sensory tactile blocks, stories, and caring teacher warmth in early years | Curriculum Playgroup section, Gallery item #9 |
+| `/images/computer-ict-lab.jpg` | Islamic Editorial School Asset | ICT / Technology | Students and teacher in hijabs and full trousers learning coding and computing in the ICT lab | Equipping young minds with computational literacy and essential digital competencies | Curriculum ICT section, Gallery item #10 |
+
+---
+
+### Video Assets & Official Social Media
+- **Official Facebook Video Stream**: `https://www.facebook.com/bayyinahidealscl/?locale=bn_IN` (Regular video posts of student English presentations, Quran recitation competitions, and annual functions).
+- **Embedded Player Integration**: Implemented via interactive lazy-loading with poster preview, modal playback controls, and offline fallback handlers.
