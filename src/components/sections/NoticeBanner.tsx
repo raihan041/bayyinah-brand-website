@@ -12,8 +12,8 @@ export default function NoticeBanner() {
   if (!notice || !notice.isCurrent) return null;
 
   return (
-    <section className="py-10 bg-[#05331e] text-white border-y border-[#0a5c36]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-8 sm:py-10 bg-[#05331e] text-white border-y border-[#0a5c36]">
+      <div className="site-container">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 p-6 rounded-2xl bg-white/[0.05] border border-white/10 backdrop-blur-xs">
           <div className="flex items-start gap-4">
             <div className="size-12 rounded-xl bg-[#f59e0b] text-[#05331e] flex items-center justify-center shrink-0 shadow-md">

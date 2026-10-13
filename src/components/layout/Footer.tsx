@@ -12,8 +12,8 @@ export default function Footer() {
   const { language, t } = useLanguage();
 
   return (
-    <footer className="bg-[#051e15] text-white/80 border-t border-white/10 pt-16 pb-24 lg:pb-12 selection:bg-[#f59e0b] selection:text-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-[#051e15] text-white/80 border-t border-white/10 pt-14 pb-24 lg:pb-12 selection:bg-[#f59e0b] selection:text-black">
+      <div className="site-container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-white/10">
           {/* Col 1: School Identity & Philosophy (4 cols) */}
           <div className="lg:col-span-4 flex flex-col gap-4">

@@ -10,9 +10,9 @@ export default function SchoolIntro() {
   const { language, t } = useLanguage();
 
   return (
-    <section id="about-school" className="py-16 sm:py-24 bg-[#fdfbf7] border-b border-[#e5e1d5]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <section id="about-school" className="py-12 sm:py-16 lg:py-20 bg-[#fdfbf7] border-b border-[#e5e1d5]">
+      <div className="site-container">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-center">
           {/* Left Column: Visual Side-by-Side Composition (5 cols) */}
           <div className="lg:col-span-5 relative order-2 lg:order-1">
             <div className="relative rounded-3xl overflow-hidden border border-[#e5e1d5] shadow-lg bg-white p-2">
@@ -58,7 +58,7 @@ export default function SchoolIntro() {
               {t("Welcome to Bayyinah", "বাইয়্যিনাহ পরিচিতি")}
             </div>
 
-            <h2 className={`text-2xl sm:text-4xl font-extrabold text-[#182621] mt-3 tracking-tight leading-tight ${language === "bn" ? "font-bengali" : ""}`}>
+            <h2 className={`text-2xl sm:text-3xl lg:text-[2.2rem] 2xl:text-4xl font-extrabold text-[#182621] mt-3 tracking-tight leading-tight ${language === "bn" ? "font-bengali" : ""}`}>
               {t("An Educational Sanctuary for Both Worlds: ", "উভয় জাহানের কল্যাণে এক অনন্য উদ্যোগ: ")}
               <span className="text-[#0a5c36] font-bengali">{schoolInfo.motto.bn}</span>
             </h2>

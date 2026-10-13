@@ -67,6 +67,274 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-bengali);
 }
 
+/* Responsive container tailored across all viewports: Mobile, HD, FHD, 2K, and 4K */
+.site-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .site-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* HD (1024px - 1479px, e.g. 1280x720, 1366x768, 1440x900):
+     60rem (960px) max-width provides generous side gutters:
+     ~203px margins on 1366px, ~160px margins on 1280px!
+     Gaps feel airy and spacious just like FHD/2K! */
+  .site-container {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    max-width: 60rem; /* 960px */
+  }
+}
+
+@media (min-width: 1480px) {
+  /* Full HD (FHD 1920x1080) displays:
+     70rem (1120px) max-width provides spacious ~400px side gaps on each side! */
+  .site-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 70rem; /* 1120px */
+  }
+}
+
+@media (min-width: 2000px) {
+  /* 2K QHD (2560x1440) displays:
+     80rem (1280px) max-width preserves the spacious ~640px side gaps on each side */
+  .site-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 80rem; /* 1280px */
+  }
+}
+
+@media (min-width: 2800px) {
+  /* 4K UHD (3840x2160) displays:
+     115rem (1840px) max-width provides proportional ~1000px side gaps on each side (26% ratio),
+     matching the 2K proportion instead of leaving a massive empty void! */
+  .site-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    max-width: 115rem; /* 1840px */
+  }
+}
+
+/* Dedicated Header Container: gives logo, brand title, 6 nav items, and action buttons ample breathing room across all screens */
+.header-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 80rem; /* 1280px */
+}
+
+@media (min-width: 640px) {
+  .header-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* HD (1024px - 1479px, e.g. 1366x768 / 1280x720): 1200px container allows full brand name & all nav items without clipping */
+  .header-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 76rem; /* 1216px */
+  }
+}
+
+@media (min-width: 1480px) {
+  /* Full HD (1920x1080): 1280px container provides comfortable 320px side margins while displaying full logo title */
+  .header-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 80rem; /* 1280px */
+  }
+}
+
+@media (min-width: 2000px) {
+  /* 2K (2560x1440): 1280px container preserves the generous 640px side margins */
+  .header-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 80rem; /* 1280px */
+  }
+}
+
+@media (min-width: 2800px) {
+  /* 4K UHD (3840x2160): 1840px container */
+  .header-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    max-width: 115rem; /* 1840px */
+  }
+}
+
+/* Hero responsive title scaling across all resolutions: Mobile -> HD -> FHD -> 2K -> 4K */
+.hero-title-bn {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+@media (min-width: 640px) {
+  .hero-title-bn {
+    font-size: 1.875rem;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 768px) {
+  .hero-title-bn {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 1024px) {
+  /* HD (1024px - 1479px, e.g. 1366x768): ~31px - solves "text is looking bigger" on HD */
+  .hero-title-bn {
+    font-size: 1.95rem;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 1480px) {
+  /* Full HD (1920x1080): sleek, balanced, authoritative (~37.6px) */
+  .hero-title-bn {
+    font-size: 2.35rem;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 2000px) {
+  /* 2K (2560x1440): expansive and grand (~52px) */
+  .hero-title-bn {
+    font-size: 3.25rem;
+    line-height: 1.2;
+  }
+}
+@media (min-width: 2800px) {
+  /* 4K (3840x2160): bold, commanding, highly legible (~72px) - solves "text is low" on 4K */
+  .hero-title-bn {
+    font-size: 4.5rem;
+    line-height: 1.18;
+  }
+}
+
+.hero-title-en {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+@media (min-width: 640px) {
+  .hero-title-en {
+    font-size: 1.875rem;
+    line-height: 1.2;
+  }
+}
+@media (min-width: 768px) {
+  .hero-title-en {
+    font-size: 2rem;
+    line-height: 1.18;
+  }
+}
+@media (min-width: 1024px) {
+  /* HD (1024px - 1479px): ~31px */
+  .hero-title-en {
+    font-size: 1.95rem;
+    line-height: 1.18;
+  }
+}
+@media (min-width: 1480px) {
+  /* Full HD (1920x1080) */
+  .hero-title-en {
+    font-size: 2.35rem;
+    line-height: 1.18;
+  }
+}
+@media (min-width: 2000px) {
+  /* 2K (2560x1440) */
+  .hero-title-en {
+    font-size: 3.25rem;
+    line-height: 1.15;
+  }
+}
+@media (min-width: 2800px) {
+  /* 4K (3840x2160) */
+  .hero-title-en {
+    font-size: 4.5rem;
+    line-height: 1.15;
+  }
+}
+
+/* Fine-tuning for HD screens (1024px - 1479px, e.g. 1366x768 / 1280x720) */
+@media (min-width: 1024px) and (max-width: 1479px) {
+  .hero-desc {
+    font-size: 0.875rem !important;
+    line-height: 1.6 !important;
+    max-width: 32rem !important;
+  }
+  .hero-card-wrapper {
+    max-width: 390px !important;
+  }
+  .hero-stat-card {
+    padding: 0.75rem 0.875rem !important;
+  }
+  .hero-stat-value {
+    font-size: 1.25rem !important;
+  }
+  .hero-stat-label {
+    font-size: 0.65rem !important;
+  }
+  .hero-stat-sublabel {
+    font-size: 0.65rem !important;
+  }
+  section h2 {
+    font-size: 1.85rem !important;
+    line-height: 1.25 !important;
+  }
+}
+
+/* Fine-tuning for 4K UHD screens (2800px+, e.g. 3840x2160) */
+@media (min-width: 2800px) {
+  .hero-desc {
+    font-size: 1.25rem !important;
+    line-height: 1.7 !important;
+    max-width: 48rem !important;
+  }
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    padding: 1.125rem 2.25rem !important;
+    font-size: 1.15rem !important;
+    border-radius: 1.25rem !important;
+  }
+  .hero-card-wrapper {
+    max-width: 620px !important;
+  }
+  .hero-stat-card {
+    padding: 1.5rem 1.75rem !important;
+  }
+  .hero-stat-value {
+    font-size: 2.5rem !important;
+    line-height: 1.15 !important;
+  }
+  .hero-stat-label {
+    font-size: 0.95rem !important;
+    margin-top: 0.5rem !important;
+  }
+  .hero-stat-sublabel {
+    font-size: 0.85rem !important;
+    margin-top: 0.35rem !important;
+  }
+  section h2 {
+    font-size: 3rem !important;
+    line-height: 1.2 !important;
+  }
+}
+
 /* Organic journey badge shapes inspired by reference */
 .organic-badge-1 {
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;

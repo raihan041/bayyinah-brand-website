@@ -9,14 +9,14 @@ export default function AdmissionCta() {
   const { language, t } = useLanguage();
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#063b23] via-[#052b1a] to-[#031c11] text-white py-16 sm:py-24 border-b border-white/10">
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#063b23] via-[#052b1a] to-[#031c11] text-white py-12 sm:py-16 lg:py-20 border-b border-white/10">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 right-0 size-96 rounded-full bg-[#f59e0b]/15 blur-3xl" />
         <div className="absolute inset-0 bg-dark-grid opacity-30" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl border border-white/15 bg-white/[0.04] backdrop-blur-xl p-5 sm:p-10 lg:p-16 shadow-2xl">
+      <div className="relative site-container">
+        <div className="rounded-3xl border border-white/15 bg-white/[0.04] backdrop-blur-xl p-5 sm:p-10 lg:p-14 shadow-2xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             {/* Left Content (7 cols) */}
             <div className="lg:col-span-7">
@@ -25,7 +25,7 @@ export default function AdmissionCta() {
                 {t("Admissions Ongoing · Nursery to Class 10", "ভর্তি কার্যক্রম চলমান · নার্সারি থেকে ১০ম শ্রেণি")}
               </span>
 
-              <h2 className={`text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white mt-4 tracking-tight leading-tight ${language === "bn" ? "font-bengali" : ""}`}>
+              <h2 className={`text-2xl sm:text-3xl lg:text-[2.2rem] 2xl:text-4xl font-extrabold text-white mt-4 tracking-tight leading-tight ${language === "bn" ? "font-bengali" : ""}`}>
                 {t(
                   "Give Your Child the Gift of Both Worlds.",
                   "সন্তানের সোনালী ভবিষ্যৎ ও নৈতিক চরিত্র গঠনে এক অনন্য প্রতিষ্ঠান।"

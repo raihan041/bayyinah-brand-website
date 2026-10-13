@@ -49,8 +49,8 @@ export default function Header() {
   return (
     <>
       {/* Top emergency / notice announcement bar */}
-      <div className="bg-[#05331e] text-white/90 text-xs py-1.5 px-4 sm:px-8 border-b border-white/10 hidden md:block">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="bg-[#05331e] text-white/90 text-xs py-1.5 border-b border-white/10 hidden md:block">
+        <div className="header-container flex items-center justify-between">
           <div className="flex items-center gap-4">
             <span className="inline-flex items-center gap-1.5 font-semibold text-[#f59e0b]">
               <span className="size-2 rounded-full bg-[#f59e0b] animate-pulse"></span>
@@ -86,40 +86,40 @@ export default function Header() {
       <header
         className={`sticky top-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-[#e5e1d5] py-2.5"
-            : "bg-[#fdfbf7] border-b border-[#e5e1d5]/60 py-3.5"
+            ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-[#e5e1d5] py-2 sm:py-2.5"
+            : "bg-[#fdfbf7] border-b border-[#e5e1d5]/60 py-2.5 sm:py-3.5"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
-            {/* Logo & School Title */}
+        <div className="header-container">
+          <div className="flex items-center justify-between gap-3 sm:gap-4 lg:gap-6">
+            {/* Logo & School Title — shrink-0 and whitespace-nowrap guarantees full visibility on all screens */}
             <Link
               href="/"
-              className="group flex items-center gap-3 transition-transform focus-visible:outline-2 focus-visible:outline-[#0a5c36] rounded-lg"
+              className="group flex items-center gap-2.5 sm:gap-3 shrink-0 transition-transform focus-visible:outline-2 focus-visible:outline-[#0a5c36] rounded-lg"
               aria-label="Bayyinah Ideal School — Back to Home"
             >
-              <div className="relative size-11 sm:size-12 shrink-0 rounded-full overflow-hidden p-0.5 bg-white border border-[#0a5c36]/20 shadow-xs group-hover:scale-105 transition-transform">
+              <div className="relative size-10 sm:size-11 shrink-0 rounded-full overflow-hidden p-0.5 bg-white border border-[#0a5c36]/20 shadow-xs group-hover:scale-105 transition-transform">
                 <Image
                   src="/images/logo.png"
                   alt="Bayyinah Ideal School Logo"
-                  width={48}
-                  height={48}
+                  width={44}
+                  height={44}
                   className="object-contain size-full"
                   priority
                 />
               </div>
-              <div className="flex flex-col min-w-0">
-                <span className={`text-sm sm:text-lg font-extrabold tracking-tight text-[#071f16] group-hover:text-[#0a5c36] transition-colors leading-tight truncate ${language === "bn" ? "font-bengali" : ""}`}>
+              <div className="flex flex-col shrink-0 min-w-0">
+                <span className={`text-[13px] xs:text-sm sm:text-[15px] lg:text-base xl:text-lg font-extrabold tracking-tight text-[#071f16] group-hover:text-[#0a5c36] transition-colors leading-tight whitespace-nowrap ${language === "bn" ? "font-bengali" : ""}`}>
                   {t(schoolInfo.name.en, schoolInfo.name.bn)}
                 </span>
-                <span className="text-[11px] sm:text-xs font-semibold text-[#0a5c36] leading-tight truncate font-bengali">
+                <span className="text-[10px] xs:text-[11px] sm:text-xs font-semibold text-[#0a5c36] leading-tight whitespace-nowrap font-bengali">
                   {schoolInfo.motto.bn}
                 </span>
               </div>
             </Link>
 
             {/* Desktop Navigation Links */}
-            <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+            <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1.5 shrink-0">
               {mainNavItems.map((item) => {
                 const isActive = pathname === item.href;
                 const navTitle = t(item.title, item.bnTitle);
@@ -127,8 +127,8 @@ export default function Header() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition-all ${
-                      language === "bn" ? "font-bengali text-sm" : ""
+                    className={`px-2 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm font-semibold transition-all ${
+                      language === "bn" ? "font-bengali text-xs xl:text-sm" : ""
                     } ${
                       isActive
                         ? "text-[#0a5c36] bg-[#0a5c36]/8 font-bold"
@@ -142,13 +142,13 @@ export default function Header() {
             </nav>
 
             {/* Right Action Button, Language Switcher & Mobile Toggle */}
-            <div className="flex items-center gap-2 sm:gap-3">
+            <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0 ml-auto sm:ml-0">
               {/* Language Switcher */}
               <LanguageSwitcher />
 
               <Link
                 href="/contact#enquiry-form"
-                className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#0a5c36] hover:bg-[#073826] text-white font-semibold text-xs sm:text-sm shadow-xs transition-all hover:shadow-md hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0a5c36]"
+                className="hidden sm:inline-flex items-center gap-1.5 px-3 xl:px-4 py-1.5 xl:py-2 rounded-xl bg-[#0a5c36] hover:bg-[#073826] text-white font-semibold text-xs xl:text-sm shadow-xs transition-all hover:shadow-md hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0a5c36]"
               >
                 <span className={language === "bn" ? "font-bengali" : ""}>
                   {t("Admission Enquiry", "ভর্তি আবেদন")}
@@ -156,24 +156,15 @@ export default function Header() {
                 <ArrowRight className="size-3.5" />
               </Link>
 
-              {/* Mobile quick call icon */}
-              <a
-                href={`tel:${schoolInfo.contact.phones[0].raw}`}
-                className="sm:hidden p-2.5 rounded-xl bg-[#0a5c36]/10 text-[#0a5c36] hover:bg-[#0a5c36]/20 transition-colors"
-                aria-label="Direct call admissions"
-              >
-                <Phone className="size-4" />
-              </a>
-
               {/* Mobile menu button */}
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="lg:hidden p-2.5 rounded-xl text-[#182621] hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-[#0a5c36] transition-colors"
+                className="lg:hidden p-2 sm:p-2.5 rounded-xl text-[#182621] hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-[#0a5c36] transition-colors"
                 aria-expanded={mobileMenuOpen}
                 aria-label="Toggle Navigation Menu"
               >
-                {mobileMenuOpen ? <X className="size-6 text-red-600" /> : <Menu className="size-6" />}
+                {mobileMenuOpen ? <X className="size-5 sm:size-6 text-red-600" /> : <Menu className="size-5 sm:size-6" />}
               </button>
             </div>
           </div>

@@ -32,14 +32,14 @@ export default function CurriculumView() {
           <div className="absolute inset-0 bg-dark-grid opacity-50" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative site-container">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#f59e0b]/40 bg-[#f59e0b]/15 px-3.5 py-1 text-xs font-mono uppercase tracking-wider text-[#fcd34d] font-bold mb-4">
               <BookOpen className="size-3.5" />
               {t("Integrated Academic Framework", "সমন্বিত শিক্ষাক্রম রূপরেখা")}
             </div>
 
-            <h1 className={`text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15] ${language === "bn" ? "font-bengali text-4xl sm:text-6xl" : ""}`}>
+            <h1 className={`text-2xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl font-extrabold tracking-tight text-white leading-[1.2] ${language === "bn" ? "font-bengali text-3xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl" : ""}`}>
               {t("Academic Rigour Anchored in Divine Guidance.", "জাতীয় শিক্ষাক্রম ও বিশুদ্ধ দীনিয়্যাতের বাস্তবায়ন।")}
             </h1>
 
@@ -71,8 +71,8 @@ export default function CurriculumView() {
       </section>
 
       {/* Curriculum Distinction Note */}
-      <section className="py-8 bg-[#fef3c7] border-b border-[#fcd34d]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-7 bg-[#fef3c7] border-b border-[#fcd34d]">
+        <div className="site-container">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-xs sm:text-sm text-[#92400e]">
             <ShieldCheck className="size-6 text-[#d97706] shrink-0" />
             <div className={language === "bn" ? "font-bengali text-sm" : ""}>
@@ -89,13 +89,13 @@ export default function CurriculumView() {
       </section>
 
       {/* 4 Core Pillars */}
-      <section className="py-16 sm:py-24 bg-[#fdfbf7] border-b border-[#e5e1d5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+      <section className="py-12 sm:py-16 lg:py-20 bg-[#fdfbf7] border-b border-[#e5e1d5]">
+        <div className="site-container">
+          <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
             <span className="inline-flex items-center gap-2 rounded-full border border-[#0a5c36]/20 bg-[#0a5c36]/8 px-3.5 py-1 text-xs font-mono uppercase tracking-wider text-[#0a5c36] font-bold">
               {t("Pedagogical Architecture", "শিক্ষা কাঠামোর চার স্তম্ভ")}
             </span>
-            <h2 className={`text-2xl sm:text-4xl font-extrabold text-[#182621] mt-3 tracking-tight ${language === "bn" ? "font-bengali" : ""}`}>
+            <h2 className={`text-2xl sm:text-3xl lg:text-[2.2rem] 2xl:text-4xl font-extrabold text-[#182621] mt-3 tracking-tight ${language === "bn" ? "font-bengali" : ""}`}>
               {t("Four Interlocking Educational Pillars", "বাইয়্যিনাহ কারিকুলামের মূল ভিত্তি")}
             </h2>
             <p className={`text-sm sm:text-base text-[#576861] mt-2 ${language === "bn" ? "font-bengali" : ""}`}>
@@ -154,16 +154,16 @@ export default function CurriculumView() {
       </section>
 
       {/* Proprietary Textbooks Feature Section */}
-      <section className="py-16 sm:py-24 bg-[#071f16] text-white border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <section className="py-12 sm:py-16 lg:py-20 bg-[#071f16] text-white border-b border-white/10">
+        <div className="site-container">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             <div className="lg:col-span-6">
               <span className={`inline-flex items-center gap-2 rounded-full border border-[#f59e0b]/40 bg-[#f59e0b]/15 px-3.5 py-1 text-xs font-mono uppercase tracking-wider text-[#fcd34d] font-bold mb-3 ${language === "bn" ? "font-bengali" : ""}`}>
                 <Sparkles className="size-3.5" />
                 {t("Exclusive School Publications", "আমাদের নিজস্ব প্রকাশিত বইসমূহ")}
               </span>
 
-              <h2 className={`text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight ${language === "bn" ? "font-bengali" : ""}`}>
+              <h2 className={`text-2xl sm:text-3xl lg:text-[2.2rem] 2xl:text-4xl font-extrabold text-white tracking-tight leading-tight ${language === "bn" ? "font-bengali" : ""}`}>
                 {t("Specially Developed Textbooks & Pedagogical Kits", "বিশেষ সহায়ক পাঠ্যবই ও উদ্ভাবনী শিক্ষা উপকরণ")}
               </h2>
 
@@ -221,13 +221,13 @@ export default function CurriculumView() {
       </section>
 
       {/* Detailed Class Groups Section */}
-      <section id="class-groups" className="py-16 sm:py-24 bg-[#fdfbf7] border-b border-[#e5e1d5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+      <section id="class-groups" className="py-12 sm:py-16 lg:py-20 bg-[#fdfbf7] border-b border-[#e5e1d5]">
+        <div className="site-container">
+          <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
             <span className="inline-flex items-center gap-2 rounded-full border border-[#0a5c36]/20 bg-[#0a5c36]/8 px-3.5 py-1 text-xs font-mono uppercase tracking-wider text-[#0a5c36] font-bold">
               {t("Class Groups & Syllabi", "শ্রেণিভিত্তিক রূপরেখা")}
             </span>
-            <h2 className={`text-2xl sm:text-4xl font-extrabold text-[#182621] mt-3 tracking-tight ${language === "bn" ? "font-bengali" : ""}`}>
+            <h2 className={`text-2xl sm:text-3xl lg:text-[2.2rem] 2xl:text-4xl font-extrabold text-[#182621] mt-3 tracking-tight ${language === "bn" ? "font-bengali" : ""}`}>
               {t("Class-by-Class Academic Focus", "প্রতিটি শ্রেণির বিশেষ পাঠ্যসূচী")}
             </h2>
             <p className={`text-sm sm:text-base text-[#576861] mt-2 ${language === "bn" ? "font-bengali" : ""}`}>

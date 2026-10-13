@@ -15,8 +15,8 @@ export default function GalleryPage() {
       <GalleryHeader />
 
       {/* Main Interactive Gallery Section */}
-      <section className="py-16 sm:py-24 bg-[#fdfbf7] border-b border-[#e5e1d5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 lg:py-20 bg-[#fdfbf7] border-b border-[#e5e1d5]">
+        <div className="site-container">
           <GalleryClient />
         </div>
       </section>

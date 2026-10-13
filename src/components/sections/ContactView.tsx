@@ -25,7 +25,7 @@ export default function ContactView() {
           <div className="absolute inset-0 bg-dark-grid opacity-50" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative site-container">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#f59e0b]/40 bg-[#f59e0b]/15 px-3.5 py-1 text-xs font-mono uppercase tracking-wider text-[#fcd34d] font-bold mb-4">
               <Building className="size-3.5" />
@@ -33,8 +33,8 @@ export default function ContactView() {
             </div>
 
             <h1
-              className={`text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15] ${
-                language === "bn" ? "font-bengali text-4xl sm:text-6xl" : ""
+              className={`text-2xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl font-extrabold tracking-tight text-white leading-[1.2] ${
+                language === "bn" ? "font-bengali text-3xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl" : ""
               }`}
             >
               {t(
@@ -58,8 +58,8 @@ export default function ContactView() {
       </section>
 
       {/* Main Contact Grid */}
-      <section className="py-16 sm:py-24 bg-[#fdfbf7] border-b border-[#e5e1d5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 lg:py-20 bg-[#fdfbf7] border-b border-[#e5e1d5]">
+        <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             {/* Left Column: School Details (5 cols) */}
             <div className="lg:col-span-5 space-y-8">
@@ -279,8 +279,8 @@ export default function ContactView() {
       </section>
 
       {/* Campus Map Section */}
-      <section className="py-16 sm:py-20 bg-[#f6f3eb] border-b border-[#e5e1d5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 bg-[#f6f3eb] border-b border-[#e5e1d5]">
+        <div className="site-container">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
             <div>
               <span

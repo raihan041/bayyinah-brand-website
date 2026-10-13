@@ -9,15 +9,15 @@ export default function TeacherPreview() {
   const { language, t } = useLanguage();
 
   return (
-    <section className="py-16 sm:py-24 bg-[#fdfbf7] border-b border-[#e5e1d5]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
+    <section className="py-12 sm:py-16 lg:py-20 bg-[#fdfbf7] border-b border-[#e5e1d5]">
+      <div className="site-container">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-14">
           <div className="max-w-2xl">
             <span className="inline-flex items-center gap-2 rounded-full border border-[#0a5c36]/20 bg-[#0a5c36]/8 px-3.5 py-1 text-xs font-mono uppercase tracking-wider text-[#0a5c36] font-bold">
               <UserCheck className="size-3.5" />
               {t("Academic Leadership & Faculty", "একাডেমিক নেতৃত্ব ও শিক্ষকবৃন্দ")}
             </span>
-            <h2 className={`text-2xl sm:text-4xl font-extrabold text-[#182621] mt-3 tracking-tight leading-tight ${language === "bn" ? "font-bengali" : ""}`}>
+            <h2 className={`text-2xl sm:text-3xl lg:text-[2.2rem] 2xl:text-4xl font-extrabold text-[#182621] mt-3 tracking-tight leading-tight ${language === "bn" ? "font-bengali" : ""}`}>
               {t("Guided by Experienced Scholars & Educators", "অভিজ্ঞ শিক্ষাবিদ ও আলেমদের প্রত্যক্ষ দিকনির্দেশনা")}
             </h2>
             <p className={`text-sm sm:text-base text-[#576861] mt-3 leading-relaxed ${language === "bn" ? "font-bengali" : ""}`}>

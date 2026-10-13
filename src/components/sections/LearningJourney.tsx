@@ -22,21 +22,21 @@ export default function LearningJourney() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[#071f16] text-white py-16 sm:py-24 border-b border-white/10">
+    <section className="relative overflow-hidden bg-[#071f16] text-white py-12 sm:py-16 lg:py-20 border-b border-white/10">
       {/* Background radial glow & grid */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 size-96 rounded-full bg-[#0a5c36]/20 blur-3xl" />
         <div className="absolute inset-0 bg-dark-grid opacity-40" />
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-12 2xl:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-20">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
           <span className="inline-flex items-center gap-2 rounded-full border border-[#f59e0b]/30 bg-[#f59e0b]/10 px-4 py-1.5 font-mono text-xs tracking-wider uppercase text-[#fcd34d] font-bold">
             <Sparkles className="size-3 text-[#f59e0b]" />
             {t("Student Growth Trajectory", "শিক্ষার্থীদের ক্রমবিকাশ")}
           </span>
-          <h2 className={`text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white mt-3.5 tracking-tight leading-tight ${language === "bn" ? "font-bengali" : ""}`}>
+          <h2 className={`text-2xl sm:text-3xl lg:text-[2.35rem] 2xl:text-4xl font-extrabold text-white mt-3.5 tracking-tight leading-tight ${language === "bn" ? "font-bengali" : ""}`}>
             {t("The Bayyinah Educational Journey", "বাইয়্যিনাহর শিক্ষাদান পরিক্রমা")}
           </h2>
           <p className={`text-sm sm:text-base text-white/70 mt-3 leading-relaxed ${language === "bn" ? "font-bengali" : ""}`}>

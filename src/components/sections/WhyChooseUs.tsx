@@ -60,15 +60,15 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section id="why-choose-us" className="py-16 sm:py-24 bg-[#f6f3eb] border-b border-[#e5e1d5]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
+    <section id="why-choose-us" className="py-12 sm:py-16 lg:py-20 bg-[#f6f3eb] border-b border-[#e5e1d5]">
+      <div className="site-container">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-14">
           <div className="max-w-2xl">
             <span className="inline-flex items-center gap-2 rounded-full border border-[#d97706]/30 bg-[#fef3c7] px-3.5 py-1 text-xs font-mono uppercase tracking-wider text-[#b45309] font-bold">
               <span className="size-1.5 rounded-full bg-[#d97706]" />
               {t("The Bayyinah Difference", "বাইয়্যিনাহর বৈশিষ্ট্য")}
             </span>
-            <h2 className={`text-2xl sm:text-4xl font-extrabold text-[#182621] mt-3 tracking-tight leading-tight ${language === "bn" ? "font-bengali" : ""}`}>
+            <h2 className={`text-2xl sm:text-3xl lg:text-[2.2rem] 2xl:text-4xl font-extrabold text-[#182621] mt-3 tracking-tight leading-tight ${language === "bn" ? "font-bengali" : ""}`}>
               {t("Why Discerning Parents Trust Bayyinah", "সচেতন অভিভাবক কেন বাইয়্যিনাহকে বেছে নেন")}
             </h2>
             <p className={`text-sm sm:text-base text-[#576861] mt-3 leading-relaxed ${language === "bn" ? "font-bengali" : ""}`}>
